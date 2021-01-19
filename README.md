@@ -1,2 +1,2 @@
-# -ZSHAE-PlayerServers
+# ZSHAE-PlayerServers
 Inserting data in PlayerServers
