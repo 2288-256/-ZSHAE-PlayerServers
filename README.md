@@ -1,2 +1,3 @@
 # ZSHAE-PlayerServers
-PlayerServersのデータ等を入れておく場所です
+
+PlayerServersの課題や問題点などを管理するために作成
