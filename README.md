@@ -1,2 +1,2 @@
 # ZSHAE-PlayerServers
-Inserting data in PlayerServers
+PlayerServersのデータ等を入れておく場所です
