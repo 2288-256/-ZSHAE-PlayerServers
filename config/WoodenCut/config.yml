@@ -1,0 +1,356 @@
+
+＃____ ___ __ __ __ __ ___________ __ ___
+＃| | \ | _ / | _ | __ | _____ _____ _ / | _ ___ \ __ ___ / | __ | _____ \ _ | __ ___________
+＃| | / | \ __ \ | / \\ __ \\ __ \ / __ \ | | | | / \ | __ \ _ / __ \ _ __ \
+＃| | / | | _ | | | | Y Y \ / __ \ | | \ ___ / | | | | Y Y \ \ _ \ \ ___ / | | \ /
+＃| ______ / | ____ / __ | | __ | __ | _ | （____ / __ | \ ___ | ____ | | __ | __ | _ | / ___ / \ ___> __ |
+
+＃このプラグインに関連して実行しているサーバーのタイプ
+＃この値は変更しないでください
+＃デフォルト：CURRENT
+サーバータイプ：CURRENT
+
+＃/ localeフォルダーで使用するロケール
+＃デフォルト：en_US
+ロケール：en_US
+
+＃プラグインが無効になっているワールドのリスト
+＃ デフォルト：
+＃-disabled_world_name
+無効化された世界：
+  --disabled_world_name
+
+＃一度に壊すことができるログの最大数
+＃デフォルト：150
+チョップあたりの最大ログ数：150
+
+＃何かが木と見なされるために必要な葉の最小数
+＃デフォルト：5
+木に必要な葉：5
+
+＃葉を破壊する必要がある場合
+＃デフォルト：true
+葉を破壊する：true
+
+＃切り刻まれた丸太の数に基づいて、ツールに現実的なダメージを与えます
+＃falseの場合、ツールから削除される耐久性は1つだけです
+＃デフォルト：true
+現実的なツールの損傷：true
+
+＃木を切り倒すために使用するツールを破損から保護します
+＃ツールが壊れた場合にツリーが倒れるのを防ぎます
+＃デフォルト：false
+保護ツール：false
+
+＃ツールにシルクタッチエンチャントがある場合はそれを使用します
+＃ログとリーフは元のブロックを100％ドロップします
+＃デフォルト：true
+apply-silk-touch：true
+
+＃壊れたリーフブロックごとにツールを追加で損傷します。これはバニラの動作ですが、ここで無効にすることができます
+＃realistic-tool-damageがfalseの場合は何もしません
+＃デフォルト：true
+apply-silk-touch-tool-damage：true
+
+＃倒れる前に木の根元全体を壊す必要があります
+＃デフォルト：false
+break-entire-tree-base：false
+
+＃樹木落下を開始するブロックのブロックをドロップしないでください
+＃デフォルト：false
+destroy-initiated-block：false
+
+＃開始されたブロックより上のログのみを検出する
+＃デフォルト：true
+only-detect-logs-upwards：true
+
+＃プレイヤーが何かをしている間だけ木を倒す
+＃有効な値：SNEAKING、NOT_SNEAKING、ALWAYS
+＃デフォルト：常に
+only-topple-while：SNEAKING
+
+＃クリエイティブモードで木を倒すことを許可する
+＃デフォルト：true
+allow-creative-mode：true
+
+＃木を倒すには、プレーヤーに「ultimatetimber.chop」の権限が必要です。
+＃デフォルト：false
+require-chop-permission：false
+
+＃プレイヤーがクールダウンの長さごとに1本の木だけを切り刻むことを許可されるべきである場合
+＃デフォルト：false
+player-tree-topple-cooldown：false
+
+＃プレイヤーが再び木を切り刻むことができるまでに待たなければならない秒数
+＃player-tree-topple-cooldownがfalseの場合、何もしません
+＃時間は秒単位であり、正の整数である必要があります
+＃デフォルト：5
+player-tree-topple-cooldown-length：5
+
+＃手に持っているものに関係なく、プレイヤーが木を倒すことができるようにする
+＃デフォルト：false
+無視-必須-ツール：false
+
+＃木が倒れたときに苗木を自動的に植え替える
+＃デフォルト：true
+苗木を植え替える：false
+
+＃プレイヤーの許可に関係なく、常にベースツリーブロックの苗木を植え替えます
+＃デフォルト：false
+常に植え替え苗木：false
+
+＃プレイヤーが植え替えられた苗木を壊さないようにするための秒数
+＃無効にするには0に設定します
+＃植え替え苗木が偽の場合は何もしません
+＃時間は秒単位であり、正の整数である必要があります
+＃デフォルト：3
+植え替え-苗木-クールダウン：3
+
+＃落ち葉のブロックが地面に落ちたときに苗木を植え替える機会を与える
+＃デフォルト：true
+落下ブロック-植え替え-苗木：true
+
+＃落ち葉が苗木を植える可能性の割合
+＃falling-blocks-replant-saplingsがfalseの場合は何もしません
+＃チャンスは100を超えており、小数が含まれている可能性があります
+＃デフォルト：1
+落下ブロック-植え替え-苗木-チャンス：1
+
+＃倒れた木のブロックがヒットした場合にプレイヤーにダメージを与えるようにする
+＃デフォルト：true
+落下ブロック-取引-損傷：true
+
+＃倒れた木のブロックが与えるダメージの量
+＃falling-blocks-deal-damageがfalseの場合、これは何もしません
+＃デフォルト：1
+フォーリングブロックダメージ：1
+
+＃ツリーブロックをドロップするのではなく、プレーヤーのインベントリに自動的に追加します
+＃デフォルト：false
+add-items-to-inventory：false
+
+＃木を倒すときにカスタムサウンドを使用する
+＃デフォルト：true
+use-custom-sounds：true
+
+＃木を倒すときにカスタムパーティクルを使用する
+＃デフォルト：true
+use-custom-particles：true
+
+＃プレイヤーがultimatetimber.bonuslootの権限を持っている場合のボーナス戦利品乗数
+＃ツリードロップの可能性をこの値で乗算します
+＃10進値が許可されます
+＃デフォルト：2
+ボーナス-ルート-乗数：2
+
+＃木を倒すために配置されたブロックを無視する必要がある場合
+＃注：これは、現在のサーバーのロード中に配置されたブロックのみを追跡します
+＃サーバーが再起動すると、配置されたツリーブロックが再び倒れる可能性があります
+＃デフォルト：true
+配置されたブロックを無視する：true
+
+＃一度にメモリ内で追跡するブロックの最大数
+＃これがメモリを大量に消費し始めたり、ツリーが検出に時間がかかりすぎたりする場合は、小さい数値を使用してください
+＃Default：5000
+ignore-placed-blocks-memory-size：5000
+
+＃Jobs / mcMMOを使用するときに経験を適用します
+＃ジョブまたはmcMMOがインストールされている場合にのみ何かを実行します
+＃デフォルト：true
+フック-適用-経験：true
+
+＃mcMMOを使用するときに追加のドロップパッシブ能力を適用します
+＃mcMMOがインストールされている場合にのみ何かを実行します
+＃デフォルト：true
+hooks-apply-extra-drops：true
+
+＃木材を使用するには、mcMMOの樹木伐採能力がアクティブである必要があります
+＃mcMMOがインストールされている場合にのみ何かを実行します
+＃デフォルト：false
+フック-require-ability-active：false
+
+＃木の倒れに使用するアニメーションの種類
+＃タイプ：FANCY、DISINTEGRATE、CRUMBLE、NONE
+ツリーアニメーションタイプ：FANCY
+
+＃tree-animation-typeがFANCYまたはCRUMBLEの場合、ブロックを地面に貼り付けます
+＃tree-animation-typeがFANCYまたはCRUMBLEでない場合は何もしません
+＃デフォルト：false
+地上のスキャッターツリーブロック：false
+
+＃ツリー構成
+＃ツリー検出とツリーと見なされるものの極端な微調整を可能にします
+＃複数の丸太と葉のタイプが許可され、1つの苗木タイプのみが許可されます
+＃ここに独自のカスタムツリータイプを追加できます。新しいセクションを追加するだけです。
+木：
+  オーク：
+    ログ：
+      -OAK_LOG
+      -STRIPPED_OAK_LOG
+      -OAK_WOOD
+      -STRIPPED_OAK_WOOD
+    葉：
+      -OAK_LEAVES
+    苗木：OAK_SAPLING
+    植え付け可能な土壌：[]
+    max-log-distance-from-trunk：6
+    max-leaf-distance-from-log：6
+    葉の検索-対角線：false
+    drop-original-log：true
+    ドロップオリジナルリーフ：false
+    ログルート：[]
+    葉っぱ：
+      0：
+        材料：OAK_SAPLING
+        チャンス：5
+      1：
+        素材：アップル
+        チャンス：0.5
+    木全体の略奪：[]
+    必須ツール：[]
+  スプルース：
+    ログ：
+      -SPRUCE_LOG
+      -STRIPPED_SPRUCE_LOG
+      - 松の材木
+      -STRIPPED_SPRUCE_WOOD
+    葉：
+      -SPRUCE_LEAVES
+    苗木：SPRUCE_SAPLING
+    植え付け可能な土壌：[]
+    max-log-distance-from-trunk：2
+    max-leaf-distance-from-log：6
+    葉の検索-対角線：false
+    drop-original-log：true
+    ドロップオリジナルリーフ：false
+    ログルート：[]
+    葉っぱ：
+      0：
+        材料：SPRUCE_SAPLING
+        チャンス：5
+    木全体の略奪：[]
+    必須ツール：[]
+  白樺：
+    ログ：
+      -BIRCH_LOG
+      -STRIPPED_BIRCH_LOG
+      -BIRCH_WOOD
+      -STRIPPED_BIRCH_WOOD
+    葉：
+      -BIRCH_LEAVES
+    苗木：BIRCH_SAPLING
+    植え付け可能な土壌：[]
+    max-log-distance-from-trunk：1
+    max-leaf-distance-from-log：4
+    葉の検索-対角線：false
+    drop-original-log：true
+    ドロップオリジナルリーフ：false
+    ログルート：[]
+    葉っぱ：
+      0：
+        材料：BIRCH_SAPLING
+        チャンス：5
+    木全体の略奪：[]
+    必須ツール：[]
+  密林：
+    ログ：
+      -JUNGLE_LOG
+      -STRIPPED_JUNGLE_LOG
+      -JUNGLE_WOOD
+      -STRIPPED_JUNGLE_WOOD
+    葉：
+      -JUNGLE_LEAVES
+    苗木：JUNGLE_SAPLING
+    植え付け可能な土壌：[]
+    max-log-distance-from-trunk：6
+    max-leaf-distance-from-log：6
+    葉の検索-対角線：false
+    drop-original-log：true
+    ドロップオリジナルリーフ：false
+    ログルート：[]
+    葉っぱ：
+      0：
+        材料：JUNGLE_SAPLING
+        チャンス：2.5
+    木全体の略奪：[]
+    必須ツール：[]
+  アカシア：
+    ログ：
+      -ACACIA_LOG
+      -STRIPPED_ACACIA_LOG
+      -ACACIA_WOOD
+      -STRIPPED_ACACIA_WOOD
+    葉：
+      -ACACIA_LEAVES
+    苗木：ACACIA_SAPLING
+    植え付け可能な土壌：[]
+    max-log-distance-from-trunk：4
+    max-leaf-distance-from-log：5
+    葉の検索-対角線：false
+    drop-original-log：true
+    ドロップオリジナルリーフ：false
+    ログルート：[]
+    葉っぱ：
+      0：
+        材料：ACACIA_SAPLING
+        チャンス：5
+    木全体の略奪：[]
+    必須ツール：[]
+  dark_oak：
+    ログ：
+      -DARK_OAK_LOG
+      -STRIPPED_DARK_OAK_LOG
+      -DARK_OAK_WOOD
+      -STRIPPED_DARK_OAK_WOOD
+    葉：
+      -DARK_OAK_LEAVES
+    苗木：DARK_OAK_SAPLING
+    植え付け可能な土壌：[]
+    max-log-distance-from-trunk：3
+    max-leaf-distance-from-log：5
+    葉の検索-対角線：false
+    drop-original-log：true
+    ドロップオリジナルリーフ：false
+    ログルート：[]
+    葉っぱ：
+      0：
+        材料：DARK_OAK_SAPLING
+        チャンス：5
+      1：
+        素材：アップル
+        チャンス：0.5
+    木全体の略奪：[]
+    必須ツール：[]
+  brown_mushroom：
+    ログ：
+      -MUSHROOM_STEM
+    葉：
+      -BROWN_MUSHROOM_BLOCK
+    苗木：BROWN_MUSHROOM
+    植え付け可能な土壌：
+      -菌糸体
+    max-log-distance-from-trunk：4
+    max-leaf-distance-from-log：4
+    葉の検索-対角線：false
+    drop-original-log：false
+    ドロップオリジナルリーフ：false
+    ログルート：[]
+    葉っぱ：
+      0：
+        素材：BROWN_MUSHROOM
+        チャンス：25
+    木全体の略奪：[]
+    必須ツール：[]
+  red_mushroom：
+    ログ：
+      -MUSHROOM_STEM
+    葉：
+      -RED_MUSHROOM_BLOCK
+    苗木：RED_MUSHROOM
+    植え付け可能な土壌：
+      -菌糸体
+    max-log-distance-from-trunk：4
+    max-leaf-distance-from-log：4
+    葉の検索-対角線：true
+    drop-original-log：false
+    ドロップオリジナルリー�
