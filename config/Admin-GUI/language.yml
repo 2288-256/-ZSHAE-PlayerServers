@@ -1,0 +1,327 @@
+
+#       ----------- + AdminGUI by Ziga Zajc + -----------   #
+#                                                           #
+#                           Language                        a#
+#                                                           #
+#       --------- + ------------------------- + ---------   #
+#
+#       You can use chat colors:
+#                ________________________
+#               |   code: | color:       |
+#               |________________________|
+#               |     &0  |	Black	     |
+#               |     &1  |	Dark Blue	 |
+#               |     &2  |	Dark Green	 |
+#               |     &3  |	Dark Aqua	 |
+#               |     &4  |	Dark Red	 |
+#               |     &5  |	Dark Purple	 |
+#               |     &6  |	Gold	     |
+#               |     &7  |	Gray	     |
+#               |     &8  |	Dark Gray	 |
+#               |     &9  |	Blue	     |
+#               |     &a  |	Green	     |
+#               |     &b  |	Aqua	     |
+#               |     &c  |	Red	         |
+#               |     &d  |	Light Purple |
+#               |     &e  |	Yellow	     |
+#               |     &f  |	White	     |
+#               |     &k  |	Obfuscated	 |
+#               |     &l  |	Bold	     |
+#               |     &m  |	Strikethrough|
+#               |     &n  |	Underline	 |
+#               |     &o  |	Italic	     |
+#               |     &r  |	Reset	     |
+#               |________________________|
+#
+#----------------------------------------------------------
+#                         Prefix
+#----------------------------------------------------------
+prefix: "&7[&cコマンドショートカット&7] "
+#----------------------------------------------------------
+#----------------------------------------------------------
+#                       Commands
+#----------------------------------------------------------
+permission: "&権限がないのに使おうとするな！"
+is_not_a_player: "&c{player} はプレイヤーじゃないぜ!"
+is_not_a_number: "&c{number} は数ではありません"
+wrong_arguments: "&c/admin で使用できます"
+vault_required: "&cこのアクションを完了するためのVaultがサーバーにインストールされていません。"
+vanish_required: "&cこのアクションを完了するために、サーバーにSuperVanishまたはPremiumVanishがインストールされていません。"
+#----------------------------------------------------------
+#                    Inventory names
+#----------------------------------------------------------
+inventory_main: "&4コマンドショートカット"
+inventory_player: "&5&l{player}"
+inventory_world: "&2&l世界の設定"
+inventory_players: "&1&l入っている人"
+inventory_actions: "&9&lアクション &2&l{player}"
+inventory_kick: "&8&lキック &2&l{player}"
+inventory_ban: "&8&l入室禁止 &2&l{player}"
+inventory_potions: "&c&lポーション &2&l{player}"
+inventory_spawner: "&8&lスポナー &2&l{player}"
+inventory_money: "&2&lお金(未実装) &2&l{player}"
+inventory_money_give: "&2&lお金を与える(未実装) {player}"
+inventory_money_set: "&2&lお金を&9&l セット(未実装) &2&l{player}"
+inventory_money_take: "&2&lお金を&c&l 取る(未実装) &2&l{player}"
+inventory_inventory: "&a&l持ち物 &2&l{player}"
+#----------------------------------------------------------
+#                       Admin GUI
+#----------------------------------------------------------
+main_player: "&5&l{player}"
+main_world: "&2&l通常世界"
+main_players: "&9&lプレイヤー"
+main_maintenance_mode: "&c&lメンテナンスモード"
+main_quit: "&c&l終了する"
+#----------------------------------------------------------
+#                      Player GUI
+#----------------------------------------------------------
+player_info: "&2&l{player}"
+player_heal: "&e&l体力"
+player_feed: "&7&l満腹"
+player_survival: "&a&lサバイバルモード"
+player_adventure: "&2&lアドベンチャーモード"
+player_creative: "&3&lクリエイティブモード"
+player_spectator: "&9&lスペクテイターモード"
+player_god_enabled: "&a&l神モード(攻撃無効状態)"
+player_god_disabled: "&c&l一般人モード"
+player_potions: "&c&lポーション"
+player_spawner: "&8&lスポナー"
+player_kill: "&8&lこのプレイヤーを殺す"
+player_burn: "&c&lこのプレイヤーを燃やす"
+player_lightning: "&5&lこのプレイヤーに雷を落とす"
+player_firework: "&4&lこのプレイヤーの真上に花火を打ち上げ"
+player_money: "&2&lお金(未実装)"
+player_vanish_enabled: "&a&l消える(未実装)"
+player_vanish_disabled: "&c&l消える(未実装)"
+player_back: "&c&l戻る"
+#----------------------------------------------------------
+#                       World GUI
+#----------------------------------------------------------
+world_day: "&e&l朝"
+world_night: "&8&l夜"
+world_thunder: "&9&l雷"
+world_rain: "&3&l雨"
+world_clear: "&b&l晴れ"
+world_back: "&c&l戻る"
+#----------------------------------------------------------
+#                     Players GUI
+#----------------------------------------------------------
+players_color: "&2&l{player}"
+players_lore: "&cクリックしてアクションをする"
+players_previous: "&c&l前のページ"
+players_page: "&a&lページ"
+players_next: "&2&l次のページ"
+players_back: "&c&l戻る"
+#----------------------------------------------------------
+#                 Players Settings GUI
+#----------------------------------------------------------
+players_settings_info: "&2&l{player}"
+players_settings_actions: "&9&lアクション"
+players_settings_money: "&2&lお金(未実装)"
+players_settings_kick_player: "&8&lプレイヤーを退出"
+players_settings_ban_player: "&8&lプレイヤーを接続禁止"
+players_settings_back: "&c&l戻る"
+#----------------------------------------------------------
+#                   Actions GUI
+#----------------------------------------------------------
+actions_heal: "&e&l体力"
+actions_feed: "&7&l満腹"
+actions_info: "&2&l{player}"
+actions_survival: "&a&lサバイバル"
+actions_adventure: "&2&lアドベンチャー"
+actions_creative: "&3&lクリエイティブ"
+actions_spectator: "&9&lスペクテイター"
+actions_teleport_to_player: "&d&lプレイヤーにテレポートする"
+actions_kill_player: "&8&lプレイヤーを殺す"
+actions_burn_player: "&c&lプレイヤーを燃やす"
+actions_teleport_player_to_you: "&d&l自分の場所にテレポートする"
+actions_god_enabled: "&a&l神モード(攻撃無効状態)"
+actions_god_disabled: "&c&l一般人モード"
+actions_potions: "&c&lポーション"
+actions_spawner: "&8&lスポナー"
+actions_inventory: "&a&l持ち物"
+actions_vanish_enabled: "&a&l消える(未実装)"
+actions_vanish_disabled: "&c&l消える(未実装)"
+actions_lightning: "&5&l雷を落とす"
+actions_firework: "&4&lプレイヤーの真上に花火を打ち上げ"
+actions_fakeop: "&c&l権限を上げたと思いきや嘘..."
+actions_back: "&c&l戻る"
+#----------------------------------------------------------
+#                       Kick GUI
+#----------------------------------------------------------
+kick: "&4あなたは退出させられました 理由："
+kick_hacking: "&7&lハッキング"
+kick_griefing: "&6&l嫌がらせ"
+kick_spamming: "&d&lスパム"
+kick_advertising: "&3&l宣伝"
+kick_swearing: "&e&l罵り"
+kick_back: "&c&l戻る"
+#----------------------------------------------------------
+#                       Ban GUI
+#----------------------------------------------------------
+ban: "&4あなたはBANされました 理由:"
+ban_time: "&c禁止時間は &c&l{days}.{months}.{years}&c at &c&l{hours}:{minutes}:{seconds}."
+ban_years: "&e&l年"
+ban_months: "&e&l月"
+ban_days: "&e&l日"
+ban_hours: "&e&l時"
+ban_minutes: "&e&l分"
+ban_hacking: "&7&lハッキング"
+ban_griefing: "&6&l嫌がらせ!"
+ban_spamming: "&d&lスパム"
+ban_advertising: "&3&l宣伝"
+ban_swearing: "&e&l罵り"
+ban_back: "&c&l戻る"
+#----------------------------------------------------------
+#                     Potions GUI
+#----------------------------------------------------------
+potions_night_vision: "&8&l夜間視力"
+potions_invisibility: "&7&l透明能力"
+potions_jump_boost: "&a&lジャンプブースト"
+potions_fire_resistance: "&c&l耐火性"
+potions_speed: "&b&lスピード"
+potions_slowness: "&4&l遅さ"
+potions_water_breathing: "&9&l水の呼吸...."
+potions_instant_health: "&a&lインスタントヘルス"
+potions_instant_damage: "&4&lインスタントダメージ"
+potions_poison: "&5&l毒"
+potions_regeneration: "&e&l罵倒"
+potions_strength: "&e&l力"
+potions_weakness: "&4&l弱点"
+potions_luck: "&6&l幸運"
+potions_slow_falling: "&3&lゆっくりと落ちる"
+potions_time: "&a&l時間"
+potions_remove_all: "&4&lすべて削除"
+potions_level: "&a&lレベル"
+potions_back: "&c&l戻る"
+#----------------------------------------------------------
+#                     Spawner GUI
+#----------------------------------------------------------
+spawner_bat: "&a&lBat"
+spawner_bee: "&6&lBee"
+spawner_blaze: "&c&lBlaze"
+spawner_cat: "&a&lCat"
+spawner_cave_spider: "&c&lCave Spider"
+spawner_chicken: "&a&lChicken"
+spawner_cod: "&b&lCod"
+spawner_cow: "&a&lCow"
+spawner_creeper: "&c&lCreeper"
+spawner_dolphin: "&b&lDolphin"
+spawner_donkey: "&a&lDonkey"
+spawner_drowned: "&c&lDrowned"
+spawner_elder_guardian: "&c&lElder Guardian"
+spawner_enderman: "&c&lEnderman"
+spawner_endermite: "&c&lEndermite"
+spawner_evoker: "&c&lEvoker"
+spawner_fox: "&a&lFox"
+spawner_ghast: "&c&lGhast"
+spawner_guardian: "&c&lGuardian"
+spawner_horse: "&a&lHorse"
+spawner_husk: "&c&lHusk"
+spawner_llama: "&a&Llama"
+spawner_magma_cube: "&c&lMagma Cube"
+spawner_mooshroom: "&a&lMooshroom"
+spawner_mule: "&a&lMule"
+spawner_ocelot: "&a&lOcelot"
+spawner_panda: "&a&lPanda"
+spawner_parrot: "&a&lParrot"
+spawner_phantom: "&c&lPhantom"
+spawner_pig: "&a&lPig"
+spawner_pillager: "&c&lPillager"
+spawner_polar_bear: "&a&lPolar Bear"
+spawner_pufferfish: "&b&lPufferfish"
+spawner_rabbit: "&a&lRabbit"
+spawner_ravager: "&c&lRavager"
+spawner_salmon: "&b&lSalmon"
+spawner_sheep: "&a&lSheep"
+spawner_shulker: "&c&lShulker"
+spawner_silverfish: "&c&lSilverfish"
+spawner_skeleton: "&c&lSkeleton"
+spawner_skeleton_horse: "&c&lSkeleton Horse"
+spawner_slime: "&c&lSlime"
+spawner_spider: "&c&lSpider"
+spawner_squid: "&b&lSquid"
+spawner_stray: "&c&lStray"
+spawner_trader_llama: "&a&lTrader Llama"
+spawner_tropical_fish: "&b&lTropical Fish"
+spawner_turtle: "&a&lTurtle"
+spawner_vex: "&c&lVex"
+spawner_villager: "&a&lVillager"
+spawner_vindicator: "&c&lVindicator"
+spawner_wandering_trader: "&a&lWandering Trader"
+spawner_witch: "&c&lWitch"
+spawner_wither: "&c&lWither"
+spawner_wolf: "&a&lWolf"
+spawner_zombie: "&c&lZombie"
+spawner_zombie_pigman: "&c&lZombie Pigman"
+spawner_zombie_villager: "&c&lZombie Villager"
+spawner_back: "&c&lBack"
+#----------------------------------------------------------
+#                      Money GUI
+#----------------------------------------------------------
+money_give: "&2&l与える"
+money_set: "&9&lセット"
+money_take: "&c&l取り上げ"
+money_back: "&c&l戻る"
+#----------------------------------------------------------
+#                      Money Amount GUI
+#----------------------------------------------------------
+money_amount_back: "&c&l戻る"
+#----------------------------------------------------------
+#                    Inventory GUI
+#----------------------------------------------------------
+inventory_refresh: "&a&l更新"
+inventory_clear: "&b&lクリア"
+inventory_back: "&c&l戻る"
+#----------------------------------------------------------
+#                       Messages
+#----------------------------------------------------------
+message_target_player_teleport: "&aあなたはに{player}テレポートされました"
+message_player_kill: "&aあなたは{player}を殺しました"
+message_player_burn: "&aあなたは{player}にふぁいあー！"
+message_target_player_creeper: "&a&lクリーパー・・・"
+message_player_creeper: "&a {player}の上にクリーパーがスポーンされました"
+message_target_player_heal: "&e{player} あなたを癒しました。"
+message_player_heal: "&aあなたは {player}を癒やしました"
+message_target_player_feed: "&e{player} あなたを養った。"
+message_player_feed: "&aあなたは{player}を養いました"
+message_player_kick: "&a{player} が蹴られました。"
+message_player_ban: "&a{player} が禁止されました"
+message_player_god_enabled: "&a{player} 現在、神モードになっています。"
+message_player_god_disabled: "&a{player} もう神モードではありません。"
+message_target_player_god_enabled: "&a{player} 神モードを有効にしました。"
+message_target_player_god_disabled: "&a{player} 神モードを無効にしました。"
+message_target_player_potions: "&a{player}:{potion}を与えました&a {time} 分"
+message_player_potions: "&a{player}: {potion}を与えました&a {time} 分"
+message_target_player_potions_remove: "&a{player} &cすべてのポーション効果を削除"
+message_player_potions_remove: "&aすべてのポーション効果を削除"
+message_heal: "&aあなたは癒されました。"
+message_feed: "&aあなたは養われました。"
+message_god_enabled: "&a神モードを有効にしました。"
+message_god_disabled: "&a神モードを無効にしました。"
+message_kill: "&cあなたは自殺しました。."
+message_burn: "&cあなたは火をつけた。"
+message_potions_remove: "&aポーション効果をすべて削除しました。"
+message_potions: "&a{potion}を与えました {time}分"
+message_maintenance: "&aサーバーはメンテナンス中"
+message_maintenance_enabled: "&aメンテナンスモードが有効"
+message_maintenance_disabled: "&aMメンテナンスモードが無効"
+message_player_not_found: "&cプレーヤーは現在利用できません！"
+message_ban_bypass: "&cこのプレイヤーを禁止することはできません！"
+message_kick_bypass: "&cこのプレイヤーを蹴ることはできません！"
+message_give: ""
+message_player_give: ""
+message_target_player_give: ""
+message_set: ""
+message_player_set: ""
+message_target_player_set: ""
+message_take: ""
+message_player_take: ""
+message_target_player_take: ""
+message_transaction_error: "&cトランザクションで問題が発生しました。"
+message_take_error: ""
+message_player_take_error: ""
+message_visible: ""
+message_player_visible: ""
+message_hide: ""
+message_player_hide: ""
