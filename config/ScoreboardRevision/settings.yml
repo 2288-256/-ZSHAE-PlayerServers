@@ -1,0 +1,83 @@
+
+﻿#  ____  ____  ____  ____  _____ ____  ____  ____  ____  ____
+# / ___\/   _\/  _ \/  __\/  __//  _ \/  _ \/  _ \/  __\/  _ \
+# |    \|  /  | / \||  \/||  \  | | //| / \|| / \||  \/|| | \|
+# \___ ||  \_ | \_/||    /|  /_ | |_\\| \_/|| |-|||    /| |_/|
+# \____/\____/\____/\_/\_\\____\\____/\____/\_/ \|\_/\_\\____/
+#
+# Scoreboard-r by Rien Bijl
+# rep: github : RienBijl/Scoreboard-revision
+# v: 1.4.2 RELEASE
+
+settings:
+  # Safe-mode determines if scoreboard is synchronized with the server (true) or asynchronized (false)
+  # Synchronized (safe-mode: true) is more stable and robust
+  # Asynchronized (safe-mode: false) is more faster but can cause strange problems in some cases
+  safe-mode: false
+  # If the server version is 1.13 or higher, enable longline.
+  # true: you can use 128 characters per line (1.13 and up)
+  # false: you can use 32 characters per line (1.12 and down)
+  longline: false
+
+# In what worlds should we disable scoreboard?
+disabled-worlds:
+  - 'non_existant_world'
+
+board:
+  title:
+    interval: 3
+    liner:
+      - '&f&l> ZSHARE <'
+  rows:
+    1:
+      interval: 5
+      liner:
+      - '---------------'
+    2:
+      interval: 80
+      liner:
+      - '&c名前:'
+    3:
+      interval: 80
+      liner:
+      - ' %player_name%'
+    4:
+      interval: 80
+      liner:
+      - ''
+    5:
+      interval: 80
+      liner:
+      - ' X:%player_x% Y:%player_y% Z:%player_z%'
+    6:
+      interval: 5
+      liner:
+      - ''
+    7:
+      interval: 80
+      liner:
+      - ''
+    '8':
+      interval: 80
+      liner:
+      - '所持金'
+    '9':
+      interval: 20
+      liner:
+      - ' %vault_eco_balance%円'
+    10:
+      interval: 80
+      liner:
+      - ''
+    11:
+      interval: 80
+      liner:
+      - 'おしらせ'
+    12:
+      interval: 80
+      liner:
+      - 'zpw.jp'
+    50:
+      interval: 5
+      liner:
+      - '---------------'
