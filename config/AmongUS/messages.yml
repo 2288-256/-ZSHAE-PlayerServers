@@ -1,0 +1,403 @@
+
+   # %prefix% Plugin's prefix
+# %arena% Arena's display name
+# /n New line test
+game:
+   # %value% Time before the game starts
+   gameStartingTime: '%prefix%&eAmongUS %value% 秒で開始'
+   gameStarting: '%prefix%&eゲームがスタートしました'
+   arenaFull: '%prefix%&cアリーナが満員です'
+   notEnoughPlayers: '%prefix%&cプレイヤーが足りません'
+   arenaInGame: '%prefix%&cアリーナはゲーム中です'
+   alreadyInGame: '%prefix%&cあなたはもうゲーム内にいます'
+   arenaNotFound: "%prefix%&cアリーナは存在しません！ "
+   tasksBar: "&a&l完了したタスクの量"
+   gameStartImposters: ""
+   gameStartCrewmates: ""
+   # %value% Player name
+   # %value1% Player's color
+   # %value2% Player's color name
+   # %value3% Arena players
+   # %value4% Arena maximum players
+   playerJoin: '%prefix%%value1%%value% &eが入室'
+   playerLeave: '%prefix%%value1%%value% &が退出'
+   # %value% Player name
+   # %value1% Player's chat color
+   # %value2% Player's color name
+   tabName: "%value1%%value%"
+   # %value3% The message
+   chat: '&6%value1%%value%: &f%value3%'
+   ghostsChat: '&6[幽霊] %value1%%value%: &f%value3%'
+   # %value% The imposters of the game
+   impostersWonMsg: '&4&lインポスターの勝利/n%value%'
+   crewmatesWonMsg: '&4&lクルーの勝利/n%value%'
+   # %value% Voter Color
+   voteSymbol: '%value%█ '
+   # %value% - Player Name, %value1% - player color, %value2% - votes
+   playerLine: '%value1%&l%value%: %value2%'
+   # %value% Votes
+   skipVoteLine: '&f&l投票をスキップしました: %value%'
+   # %value% - All Player Lines
+   votingResults: '&c&l投票結果:/n%value%'
+   # %value% - Player, %value1% - Player color
+   playerVoted: "&a%value% 投票しました"
+   skipped: "スキップしました"
+   tie: "Tie"
+   cantTalk: "%prefix%&c会議以外話せへんで！(死んでる人も話せへんで！)"
+   
+   # --- Titles Section ---
+   # When game starts
+   # %value% Imposters count
+   # %value1% Imposters of the game
+   crewmateTitle: "&9&lクルー"
+   crewmateSubTitle: "&fこの中に %value% 人のインポスターがいます"
+   imposterTitle: "&c&lインポスター"
+   imposterSubTitle: "%value1%"
+   # When there is only 1 imposter
+   imposterTitle1: "&c&lインポスター"
+   imposterSubTitle1: "%value1%"
+   crewmateTitle1: "&9&lクルー"
+   crewmateSubTitle1: "&fこの中に %value% 人のインポスターがいます"
+   # %value% Sabotage name
+   sabotageTitle: '&4サボタージュ:'
+   sabotageSubTitle: '&4&l%value%'
+   # %value% The imposters of the game
+   winTitle: '&9&l勝利'
+   winSubTitle: '&4%value%'
+   defeatTitle: '&4&l負け'
+   defeatSubTitle: '&4%value%'
+   # %value% - Player died name
+   # %value1% - Player died color
+   # %value2% - Player died color name
+   # %value3% - Called color
+   # %value4% - Called color name
+   bodyFoundTitle: "%value1%%value%"
+   bodyFoundSubTitle: "&c死体発見報告"
+   # %value% - Caller name
+   # %value1% - Caller color
+   # %value2% - Caller color name
+   emergencyMeetingTitle: "&f緊急会議"
+   emergencyMeetingSubTitle: "%value1%%value%"
+   # %value% Cause (Skipped, Tie)
+   # %value1% Imposters remains
+   noOneEjectedTitle: "%value1% 人のインポスターが残っています"
+   noOneEjectedSubTitle: "誰も追い出されませんでした (%value%)"
+   # Confirm ejects off
+   noOneEjectedTitle1: ""
+   noOneEjectedSubTitle1: "誰も追い出されませんでした (%value%)"
+   # %value% - Player name, %value1% - Player color, %value2% Imposters remaining
+   playerWasTheImposterTitle: "%value2% 人のインポスターが残っています"
+   playerWasTheImposterSubTitle: "%value% はインポスターでした"
+   playerWasNotTheImposterTitle: "%value2% 人のインポスターが残っています"
+   playerWasNotTheImposterSubTitle: "%value% は白でした..."
+   # when there is more than 1 imposter
+   playerWasAnImposterTitle: "%value2% 人のインポスターが残っています"
+   playerWasAnImposterSubTitle: "%value% はインポスターでした"
+   playerWasNotAnImposterTitle: "%value2% 人のインポスターが残っています"
+   playerWasNotAnImposterSubTitle: "%value% は白でした..."
+   # Confirm ejects off
+   playerEjectedTitle: ""
+   playerEjectedSubTitle: "%value% が追い出されました"
+   # %value% killer name, %value1% killer color, %value2% killer color name eg (blue, red)
+   playerDiedTitle: "&c殺された！"
+   playerDiedSubTitle: "&f%value1%&l%value%　によって"
+   # %value% victim name, %value1% victim color, %value2% victim color name
+   playerKilledTitle: ""
+   playerKilledSubTitle: "&f%value1%&l%value% によって"
+   sabotageFixedTitle: "&a妨害が修正されました。"
+   sabotageFixedSubTitle: ""
+   # %value% Task name
+   # %value1% Task location name
+   finishTaskTitle: ''
+   finishTaskSubTitle: '&fタスク完了！'
+   # --- End ---
+   
+   # --- GUI Titles Section ---
+   arenasSelectorInvTitle: "&nアリーナ選択"
+   colorSelectorInvTitle: "&n色を選択"
+   meetingButtonInvTitle: "&4&l緊急会議"
+   votingInvTitle: "&e誰がインポスターだ?"
+   votingInvTitle1: "&e投票結果"
+   # %value% Task's name
+   # %value1% Task's location name
+   taskInvTitle: "&e%value1%: %value%"
+   # %value% Sabotage's name - found below 'tasks'
+   # %value1% Sabotage's title
+   sabotageLightsInvTitle: "&c%value%"
+   sabotageCommsInvTitle: "&c%value%"
+   # %value2% Today's code
+   # %value3% Code typed by player
+   sabotageOxygenInvTitle: "&c%value% (%value3%) (Today's code: %value2%)"
+   sabotageReactorsInvTitle: "&c%value%: メルトダウンを停止するにはクリックします"
+   sabotageReactorsInvTitle1: "&c%value%: 2番目のユーザーを待っています"
+   sabotageReactorsInvTitle2: "&c%value%: リアクター通常"
+   # --- End ---
+   
+   # --- Action Bars ---
+   # %value% Players ingame
+   # %value1% Maximum players ingame
+   # %value2% Chance to get imposter 
+   lobbyActionBar: "&f&l%value%/%value1% players"
+   # Action bar sent to all the imposters
+   # %value% All imposters
+   impostersActionBar: "&c&lインポスター: %value%"
+   # %value% Seconds left
+   votingBeginsInActionBar: "&l投票は %value% 秒で始まります"
+   votingEndsInActionBar: "&l投票時間が終わるまで残り %value%秒" 
+   proceedingInActionBar: "&l続行するまで %value%秒"
+   killCooldownActionBar: "&c&l殺人クールダウン: %value%秒"
+   # %value% Location name
+   ventActionBar: "&c&lベント: %value%"
+   cameraActionBar: "&c&l監視カメラ: %value%"
+   # When location name is none
+   ventActionBar1: "&c&lベント"
+   cameraActionBar1: "&c&l監視カメラ"
+   # --- End ---
+   
+   # --- Boss Bars ---   
+   # %value% Seconds left
+   killCooldownBossBar: "&c&l殺人クールダウン: %value%s"
+   sabotageCooldownBossBar: "&c&l妨害クールダウン: %value%s"
+   # %value% Sabotage title
+   # %value1% Sabotage name
+   sabotageBossBar: "&4&l%value%"
+   # Sabotage with a timer
+   # %value% Sabotage title
+   # %value1% Sabotage name
+   # %value2% Seconds left
+   # %value3% - Extra "(0/2)" for oxygen / reactor
+   sabotageBossBarTimer: "&4&l%value%: %value2%s %value3%"
+   # --- End ---
+   
+   votingBeginsInMsg: ""
+   votingEndsInMsg: "投票が終わるまで残り %value%秒" 
+   proceedingInMsg: ""
+   # %value% killer name, %value1% killer color, %value2% killer color name eg (blue, red)
+   # leave the msg empty if you dont want to send it
+   playerDiedMsg: "&cあなたは死にました/n&c勝つためにタスクを終わらせてください"
+   playerEjectedMsg: "&cあなたは退場させられました/n&c勝つためにタスクを終わらせてください"
+   imposterEjectedMsg: "&cあなたは退場させられました!/n&cあなたはまだ妨害することができます。"
+
+   #Version 2.3
+   cosmeticsSelectorInvTitle: "&eキルアイテムの見た目変更"
+   # Cosmetics stuff
+   # %value% The cosmetic name
+   # %value1% Player coins
+   selectedCosmetic: "%prefix%&a %value% を選択しました"
+   # %value2% Coins
+   playerBoughtCosmetic: "%prefix%&a%value% の %value2% コインを購入しました"
+   notEnoughCoins: "%prefix%&cコインが足りません"
+   # %value% Coins the player got
+   playerCoins: "&a+%value% コイン"
+
+# For download / upload task
+# Updates every second
+# uploadData_start & downloadData_start in items.yml
+estimatedTimes:
+   - "&lEstimated Time: 4d 17hr 53m 2s"
+   - "&lEstimated Time: 18hr 17m 16s"
+   - "&lEstimated Time: 16hr 13m 36s"
+   - "&lEstimated Time: 1hr 11m 5s"
+   - "&lEstimated Time: 12m 22s"
+   - "&lEstimated Time: 3s"
+   - "&lEstimated Time: 2s"
+   - "&lEstimated Time: 1s"
+   - "&lEstimated Time: 0s"
+   - "&a&lComplete"
+
+gameStates:
+   RUNNING: "ランニング中"
+   WAITING: "待ってます"
+   STARTING: "スタート中"
+   FINISHING: "今終わりました"
+
+tasks:
+   wiring:
+      name: '配線を修正する'
+   scan:
+      name: 'スキャンを送信'
+   download_data:
+      name: 'データをダウンロード'
+   upload_data:
+      name: 'データをアップロード'
+   divert_power:
+      name: '力をそらす'
+   accept_diverted_power:
+      name: "転用された電力を受け入れる"
+   unlock_manifolds:
+      name: 'マニホールドのロックを解除する'
+   prime_shields:
+      name: 'プライムシールド'
+   calibrate_distributor:
+      name: 'ディストリビューターのキャリブレーション'
+   empty_garbage:
+      name: '空のゴミ'
+   clean_o2:
+      name: 'きれいな空気'
+   refuel:
+      name: '給油缶'
+   fuel:
+      name: '燃料エンジン'
+   inspect_sample:
+      name: 'サンプルを検査する'
+   start_reactor:
+      name: 'リアクターを起動'
+   clear_asteroids:
+     name: '小惑星をクリア'
+   swipe_card:
+     name: 'カードをスワイプ'
+   # Version 1.2:
+   chart_course:
+     name: 'チャートコース'
+   stabilize_steering:
+     name: "ステアリングを安定させる"
+   # Sabotages
+   lights:
+      name: 'ライト'
+      title: 'ライトを修正する'
+   reactor_meltdown:
+      name: '原子炉メルトダウン'
+      title: '原子炉メルトダウン'
+   oxygen:
+      name: '酸素'
+      title: '酸素が枯渇している'
+   communications:
+      name: 'コミュニケーション'
+      title: '通信妨害'
+   
+      
+
+# For floating items:
+# @MATERIAL@ - Example: '@RED_CONCRETE@'
+holograms:
+   meetingButton:
+      - "&c緊急"
+      - "&c会議"
+      - "@REDSTONE_BLOCK@"
+   # %value% Task's name
+   # %value1% Task's location name
+   task:
+      - "&e%value1%:"
+      - "&e%value%"
+   cameras:
+      - "&c-----"
+      - "&c監視カメラ"
+      - "&c-----"
+   # %value% Sabotage name
+   # %value1% Sabotage title
+   sabotage:
+      - "&c%value%"
+   # %value% Vent's location name (if it has one)
+   vent: 
+      - "&c-----"
+      - "&cベントで移動"
+      - "&c-----"
+
+# Join signs
+# %arena% Arena's name
+# %arena1% Arena's display name
+# %players% Current players
+# %maxplayers% Maximum players for arena
+# %statecolor% Arena's game state color
+# %state% Arena's game state
+arenaSignsLines:
+   - "&4&lAMONG US"
+   - "%statecolor%%state%"
+   - "&0%arena1%"
+   - "&8%players%/%maxplayers%"
+
+
+
+# Stats:
+# %games_played%
+# %imposter_wins%
+# %crewmate_wins%
+# %total_wins%
+# %imposter_kills%
+# %tasks_completed%
+# %emergencies_called%
+# %bodies_reported%
+# %times_murdered%
+# %times_ejected%
+
+# %prefix% Plugin's prefix
+# %arena% Current arena's display name
+# %emptyline% Empty line
+scoreboard:
+   title: '&5&lAMONG US'
+   # --------- Main lobby scoreboard ---------
+   main-lobby-lines:
+      - ''
+      - '&r  &dインポスター  &r'
+      - ' &e勝利数: &a%imposter_wins%'
+      - ' &eキル数: &f%imposter_kills%'
+      - ''
+      - '&r  &dクルー  &r'
+      - ' &e勝利数: &a%crewmate_wins%'
+      - ' &eタスク完了数: &f%tasks_completed%'
+      - ' &e報告された死体の数: &f%bodies_reported%'
+      - ''
+      - '   &5ZSHARE'
+   # --------- while in waiting lobby ---------
+   # %player% Player's name
+   # %playercolor% Player's color
+   # %playercolorname% Player's color name
+   # %players% - Current players in arena
+   # %minplayers% - Arena minimum players
+   # %maxplayers% - Arena maximum players
+   # %gamestarttime% - Arena start timer 
+   # %gamestate% - Arena state
+   waiting-lobby-lines:
+      - ''
+      - "&eArena:"
+      - "&7%arena%"
+      - ''
+      - '&e&lPlayers:'
+      - '&7%players%/%maxplayers%'
+      - ''
+      - '&dZSHARE'
+   # --------- while playing ---------
+   # %task% Task's name
+   # %taskloc% Task's location
+   # %taskcolor% not done - red, half done - yellow, done - green
+   # %state% if there are multiple tasks - for example (0/2)
+   taskLine: '%taskcolor%&l✘&r%taskcolor%  %task% %state%'
+   taskDoneLine: '%taskcolor%&l✔&r%taskcolor%  %task% %state%'
+   # %player% Player's name
+   # %playercolor% Player's color
+   # %playercolorname% Player's color name
+   # %playerteam% Player's teams (imposter, crewmate)
+   # %tasks% All player's tasks
+   crewmate-lines: 
+      - '%emptyline%'
+      - '&l色: %playercolor%%playercolorname%.'
+      - '&7&lタスク:'
+      - '%tasks%'
+      - '%emptyline%'
+      - ' &dZSHARE'
+   imposter-lines: 
+      - '%emptyline%'
+      - '&4全員を妨害して殺すこと'
+      - '%emptyline%'
+      - '&f&lフェイクタスク:'
+      - '%tasks%'
+      - '%emptyline%'
+      - ' &dZSHARE'
+   dead-crewmate-lines: 
+      - '%emptyline%'
+      - ' 色: %playercolor%%playercolorname%.'
+      - '%emptyline%'
+      - "&4あなたは死んでいます"
+      - "&c勝つためにタスクを完了すること"
+      - '%tasks%'
+      - '%emptyline%'
+      - ' &dZSHARE'
+   dead-imposter-lines: 
+      - '%emptyline%'
+      - ' 色: %playercolor%%playercolorname%.'
+      - '%emptyline%'
+      - "&4あなたは死んでいます"
+      - '&cあなたは妨害すること'
+      - '%emptyline%'
+      - ' &dZSHARE'
+      
